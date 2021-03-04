@@ -1,7 +1,7 @@
 <!doctype html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head th:replace="fragments/common :: head('Hello, Spring Boot!')">
+<head th:replace="fragments/common :: head('Tosspayments CMS')">
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,12 +11,12 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="starter-template.css" rel="stylesheet">
 
-    <title>Hello, Spring Boot!</title>
+    <title>Tosspayments CMS</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" th:replace="fragments/common :: menu('home')">
-        <!-- <a class="navbar-brand" href="#">Spring Boot Tutorial</a>
+        <a class="navbar-brand" href="#">Tosspayments CMS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -25,24 +25,87 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">홈 <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">게시판</a>
+                    <a class="nav-link" href="#">Board </a>
                 </li>
-            </ul>            
-        </div> -->
+            </ul>
+
+            <!-- Not Authenticated -->
+            <a class="btn btn-secondary my-2 mr-2 my-sm-0">Login</a>
+            <a class="btn btn-secondary my-2 my-sm-0">Join</a>
+
+        </div>
     </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container" id="maincontent" tabindex="-1">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--<img class="img-responsive" src="img/profile.png" alt="">-->
+                    <div class="intro-text">
+                        <h1 class="name">토스페이먼츠 자금관리 서비스</h1>
+                        <hr class="star-light">
+                        <span class="skills">상태 조회</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <main role="main" class="container">
 
-        <div class="starter-template">
-            <h1>Spring Boot Tutorial</h1>
-            <p class="lead">Spring Boot을 이용해 웹 페이지 제작<br> 
-                Spring Security, JPA를 이용해 보안 설정과 데이터 다루기</p>
+        <div>
+            <p class="lead">
+                <h1>Tosspayments CMS</h1>
+                개발중<br>
+            </p>
         </div>
 
     </main>
+
+    <!-- Footer
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>찾아오시는길</h3>
+                        <address>서울특별시 강남구 테헤란로 131, 15층 (역삼동,한국지식재산센터)</address>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Around the Web</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/toss.revolution" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/Toss_service" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/toss.im/" class="btn-social btn-outline"><span class="sr-only">Instagram</span><i class="fa fa-fw fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>고객센터</h3>
+                        <p>080-855-2020(유료),1544-0001(무료)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; 토스페이먼츠 2020
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
